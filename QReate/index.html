@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>QReate</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+<style>
+  .container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+input[type=text] {
+      padding: 12px;
+      font-size: 17px;
+      border: 0px solid white;
+      float: left;
+      width: 75%;
+      background: #f1f1f1;
+    }
+
+button {
+      float: right;
+      width: 25%;
+      padding: 12px;
+      background: black;
+      color: white;
+      font-size: 17px;
+      border: 0px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+
+button:hover {
+      background: purple;
+    }
+</style>
+<body id="page-top">
+
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">QR Generator</h1>
+      <h3 class="mb-5">
+        <em>Generate a QR code from any valid URL</em>
+      </h3>
+      <div class="container">
+      <input id="qr-data" type="text"/> 
+      <button type="text" onclick="generateCode()">Generate</button> <br> <br> <br>
+      <div style="text-align: center;"id="qrcode" style="size:80%"></div>
+      </div>
+     </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/rimanov">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/rasul-imanov-505825120/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="http://rasul-portfolio.surge.sh/">
+            <i class="fa fa-briefcase"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Rasul Imanov 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+<script src="qrcode.min.js"></script>
+<script src="qreate.js"></script>
+</html>
